@@ -3,7 +3,11 @@ nick=<%= nick %>
 pass=<%= password %>
 server=<%= server %>
 port=6667
-channels=<%= channels %>
+<% if @channels.respond_to?('join') -%>
+channels=<%= @channels.join(',') %>
+<% else -%>
+channels=<%= @channels %>
+<% end -%>
 nicks=<%= auth_nicks %>
 lockfile=/var/run/statusbot/statusbot.pid
 log_config=/etc/statusbot/logging.config

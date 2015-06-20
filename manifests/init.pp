@@ -4,7 +4,7 @@ class statusbot(
   $nick = '',
   $password = '',
   $server = '',
-  $channels = '',
+  $channels = [],
   $auth_nicks = '',
   $wiki_user = '',
   $wiki_password = '',
