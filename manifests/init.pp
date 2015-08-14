@@ -1,15 +1,15 @@
 # == Class: statusbot
 #
 class statusbot(
-  $nick = '',
-  $password = '',
-  $server = '',
+  $nick,
+  $password,
+  $server,
+  $auth_nicks,
+  $wiki_user,
+  $wiki_password,
+  $wiki_url,
+  $wiki_pageid,
   $channels = [],
-  $auth_nicks = '',
-  $wiki_user = '',
-  $wiki_password = '',
-  $wiki_url = '',
-  $wiki_pageid = '',
 ) {
 
   user { 'statusbot':
