@@ -9,6 +9,8 @@ class statusbot(
   $wiki_password,
   $wiki_url,
   $wiki_pageid,
+  $wiki_successpageid = undef,
+  $irclogs_url = undef,
   $channels = [],
 ) {
 

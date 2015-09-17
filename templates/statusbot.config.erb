@@ -17,6 +17,14 @@ username=<%= @wiki_user %>
 password=<%= @wiki_password %>
 url=<%= @wiki_url %>
 pageid=<%= @wiki_pageid %>
+<% if @wiki_successpageid %>
+successpageid=<%= @wiki_successpageid %>
+<% end -%>
+
+<% if @irclogs_url %>
+[irclogs]
+url=<%= @irclogs_url %>
+<% end -%>
 
 [alertfile]
 dir=/var/lib/statusbot/www
