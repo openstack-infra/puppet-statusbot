@@ -8,7 +8,11 @@ channels=<%= @channels.join(',') %>
 <% else -%>
 channels=<%= @channels %>
 <% end -%>
-nicks=<%= @auth_nicks %>
+<% if @nicks.respond_to?('join') -%>
+nicks=<%= @nicks.join(',') %>
+<% else -%>
+nicks=<%= @nicks %>
+<% end -%>
 lockfile=/var/run/statusbot/statusbot.pid
 log_config=/etc/statusbot/logging.config
 
