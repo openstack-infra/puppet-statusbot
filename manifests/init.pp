@@ -1,17 +1,17 @@
 # == Class: statusbot
 #
 class statusbot(
+  $auth_nicks,
   $nick,
   $password,
   $server,
-  $auth_nicks,
-  $wiki_user,
+  $wiki_pageid,
   $wiki_password,
   $wiki_url,
-  $wiki_pageid,
+  $wiki_user,
+  $channels           = [],
+  $irclogs_url        = undef,
   $wiki_successpageid = undef,
-  $irclogs_url = undef,
-  $channels = [],
 ) {
 
   user { 'statusbot':
