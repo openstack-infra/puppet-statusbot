@@ -32,3 +32,11 @@ url=<%= @irclogs_url %>
 
 [alertfile]
 dir=/var/lib/statusbot/www
+
+<% if @twitter %>
+[twitter]
+consumer_key=<%= @twitter_key %>
+consumer_secret=<%= @twitter_secret %>
+access_token_key=<%= @twitter_token_key %>
+access_token_secret=<%= @twitter_token_secret %>
+<% end -%>
