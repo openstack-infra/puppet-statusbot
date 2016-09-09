@@ -9,9 +9,14 @@ class statusbot(
   $wiki_password,
   $wiki_url,
   $wiki_user,
+  $twitter_key,
+  $twitter_secret,
+  $twitter_token_key,
+  $twitter_token_secret,
   $channels           = [],
   $irclogs_url        = undef,
   $wiki_successpageid = undef,
+  $twitter            = undef,
 ) {
 
   user { 'statusbot':
