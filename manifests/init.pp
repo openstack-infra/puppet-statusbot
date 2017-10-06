@@ -16,6 +16,7 @@ class statusbot(
   $channels           = [],
   $irclogs_url        = undef,
   $wiki_successpageid = undef,
+  $wiki_thankspageid = undef,
   $twitter            = undef,
 ) {
 
