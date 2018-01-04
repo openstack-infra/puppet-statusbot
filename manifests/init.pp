@@ -13,11 +13,13 @@ class statusbot(
   $twitter_secret = undef,
   $twitter_token_key = undef,
   $twitter_token_secret = undef,
-  $channels           = [],
-  $irclogs_url        = undef,
-  $wiki_successpageid = undef,
-  $wiki_thankspageid = undef,
-  $twitter            = undef,
+  $channels            = [],
+  $irclogs_url         = undef,
+  $wiki_successpageid  = undef,
+  $wiki_successpageurl = undef,
+  $wiki_thankspageid   = undef,
+  $wiki_thankspageurl  = undef,
+  $twitter             = undef,
 ) {
 
   user { 'statusbot':
