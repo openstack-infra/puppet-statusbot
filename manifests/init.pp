@@ -63,7 +63,7 @@ class statusbot(
     hasrestart => true,
     require    => File['/etc/init.d/statusbot'],
     subscribe  => [
-      Vcsrepo['/opt/statusbot'],
+      Exec['install_statusbot'],
       File['/etc/statusbot/statusbot.config'],
     ],
   }
