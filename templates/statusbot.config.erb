@@ -51,3 +51,12 @@ consumer_secret=<%= @twitter_secret %>
 access_token_key=<%= @twitter_token_key %>
 access_token_secret=<%= @twitter_token_secret %>
 <% end -%>
+
+<% if @mqtt %>
+[mqtt]
+hostname=<%= mqtt_hostname %>
+port=<%= mqtt_port %>
+username=<%= mqtt_username %>
+password=<%= mqtt_password %>
+ca_certs=<%= mqtt_ca_certs_path %>
+<% end %>

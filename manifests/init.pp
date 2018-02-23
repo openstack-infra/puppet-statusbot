@@ -20,6 +20,11 @@ class statusbot(
   $wiki_thankspageid   = undef,
   $wiki_thankspageurl  = undef,
   $twitter             = undef,
+  $mqtt                = undef,
+  $mqtt_hostname       = undef,
+  $mqtt_password       = undef,
+  $mqtt_port           = 1883,
+  $mqtt_ca_certs_path  = undef,
 ) {
 
   user { 'statusbot':
