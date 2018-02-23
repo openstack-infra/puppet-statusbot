@@ -13,6 +13,7 @@ class statusbot(
   $twitter_secret = undef,
   $twitter_token_key = undef,
   $twitter_token_secret = undef,
+  $mqtt_ca_cert_contents = undef,
   $channels            = [],
   $irclogs_url         = undef,
   $wiki_successpageid  = undef,
@@ -20,6 +21,11 @@ class statusbot(
   $wiki_thankspageid   = undef,
   $wiki_thankspageurl  = undef,
   $twitter             = undef,
+  $mqtt                = undef,
+  $mqtt_hostname       = undef,
+  $mqtt_username       = undef,
+  $mqtt_password       = undef,
+  $mqtt_port           = 1883,
 ) {
 
   user { 'statusbot':
@@ -124,6 +130,17 @@ class statusbot(
     replace => true,
     require => User['statusbot'],
   }
+
+  file { '/etc/statusbot/mqtt-root-CA.pem.crt':
+    ensure  => present,
+    content => $mqtt_ca_cert_contents,
+    replace => true,
+    group   => 'statusbot',
+    mode    => '0555',
+    owner   => 'root',
+    require => User['statusbot'],
+  }
+
 }
 
 # vim:sw=2:ts=2:expandtab:textwidth=79
