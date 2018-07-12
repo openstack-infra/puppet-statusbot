@@ -1,0 +1,15 @@
+class { 'statusbot':
+  nick                 => 'statusbot-test',
+  password             => 'statusbot-password',
+  server               => 'irc.notreal.net',
+  channels             => 'unrealchannel',
+  auth_nicks           => 'statusbot-test',
+  wiki_user            => 'dummy',
+  wiki_password        => 'dummy',
+  wiki_url             => 'dummy',
+  wiki_pageid          => 'dummy',
+  wiki_successpageid   => 'dummy',
+  wiki_successpageurl  => 'dummy',
+  wiki_thankspageid    => 'dummy',
+  wiki_thankspageurl   => 'dummy',
+}
