@@ -1,0 +1,9 @@
+Code-Review+2: Clark Boylan <cboylan@sapwetik.org>
+Code-Review+2: Paul Belanger <pabelanger@redhat.com>
+Workflow+1: Paul Belanger <pabelanger@redhat.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 11 Oct 2018 17:17:23 +0000
+Reviewed-on: https://review.openstack.org/599061
+Project: openstack-infra/puppet-statusbot
+Branch: refs/heads/master
