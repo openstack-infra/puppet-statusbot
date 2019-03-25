@@ -1,0 +1,8 @@
+Code-Review+2: James E. Blair <corvus@inaugust.com>
+Workflow+1: James E. Blair <corvus@inaugust.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Mon, 25 Mar 2019 17:05:08 +0000
+Reviewed-on: https://review.openstack.org/647003
+Project: openstack-infra/puppet-statusbot
+Branch: refs/heads/master
