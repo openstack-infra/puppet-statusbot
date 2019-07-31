@@ -1,5 +1,3 @@
-# OpenStack Statusbot Module
+# This repo has moved to OpenDev
 
-## Overview
-
-Configures Statusbot.
+It can now be found at [https://opendev.org/opendev/puppet-statusbot](https://opendev.org/opendev/puppet-statusbot)

@@ -1,3 +1,0 @@
-service { 'statusbot':
-  ensure => running,
-}
